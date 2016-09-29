@@ -1,5 +1,5 @@
-#ifndef CL_TERMENV
-#define CL_TERMENV
+#ifndef CL_TERMENV_H
+#define CL_TERMENV_H
 
 #include <stdlib.h>
 #include <string.h>

@@ -1,5 +1,5 @@
-#ifndef CL_TERMSIZE
-#define CL_TERMSIZE
+#ifndef CL_TERMSIZE_H
+#define CL_TERMSIZE_H
 
 #include <stdio.h>
 #include <signal.h>

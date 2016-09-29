@@ -1,5 +1,5 @@
-#ifndef CL_TERMCONF
-#define CL_TERMCONF
+#ifndef CL_TERMCONF_H
+#define CL_TERMCONF_H
 
 #include <fcntl.h>
 #include <termios.h>
