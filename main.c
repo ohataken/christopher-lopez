@@ -7,9 +7,10 @@ int main(void) {
     int ttyfd = open("/dev/tty", O_RDWR);
     cl_termsize_update();
     cl_termconf_mode(ttyfd);
-    printf("height: %d\r\n", cl_termsize_row());
-    printf("width: %d\r\n", cl_termsize_col());
+    cl_termenv_init();
+    write(ttyfd, cl_termctrl(SMCUP), sizeof(cl_termctrl(SMCUP)));
     sleep(3);
+    write(ttyfd, cl_termctrl(RMCUP), sizeof(cl_termctrl(RMCUP)));
     cl_termconf_mode_reset(ttyfd);
     return 0;
 }
