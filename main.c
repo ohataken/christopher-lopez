@@ -1,5 +1,7 @@
 #include "cl_termsize.h"
 #include "cl_termconf.h"
+#include "cl_termenv.h"
+#include "cl_termctrl.h"
 
 int main(void) {
     int ttyfd = open("/dev/tty", O_RDWR);
